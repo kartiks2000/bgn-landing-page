@@ -1,0 +1,257 @@
+:root{
+    --main-grey : rgb(49, 47, 47);
+    --main-blue: rgb(15, 187, 230);
+    --main-grey-light:rgb(68, 66, 66);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(49, 47, 47,0.6),rgba(49, 47, 47,0.6)) , url("/img/home.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nav{
+    height: 4vh;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-grey);
+    padding: 0.5rem;
+    align-items: center;
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-item{
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.nav-item a:hover{
+    color: var(--main-blue);
+}
+
+.name-title{
+    padding-left: 4rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.text{
+    color: white;
+    margin-right: 4rem;
+}
+
+.main-text{
+    font-size: 3rem;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.point{
+    display:flex;
+    padding: .6rem 0rem;
+}
+
+.icon{
+    font-size: 2rem;
+    color: var(--main-blue);
+    margin-right: 1rem;
+}
+
+.point-text{
+    font-size: 1rem;
+    max-width: 35rem;
+}
+
+.login-box{
+    display: block;
+    width: 25rem;
+    height: 22rem;
+    /* background: var(--main-blue); */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.login-heading{
+    color: white;
+    font-weight: 200;
+    padding: .6rem;
+    font-weight: 1.2rem;
+}
+
+.login-subheading{
+    color: white;
+    font-size: .7rem;
+    padding-bottom: .8rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    border: none;
+    outline: none;
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 1.3rem;
+    border-radius: 1rem;
+    padding-left: .7rem;
+    background-color: var(--main-grey);
+    color: white;
+}
+
+.form input:focus{
+    border:1px solid var(--main-blue);
+    margin-bottom:4rem ;
+}
+
+@media screen and (max-width:678px){
+    .header{
+        height: 170vh;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .main-text{
+        text-align: center;
+    }
+}
+
+.explore-section{
+    height: 30vh;
+    background: var(--main-grey);
+    text-align: center;
+}
+
+.explore-mainheading{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.explore-text{
+    margin: 0 auto;
+    color: grey;
+    font-size: 1.2rem;
+    max-width: 65rem;
+    margin-bottom: 2rem;
+}
+
+.explore-btn{
+    padding: .5rem;
+    border: 1px solid grey ;
+    background-color: var(--main-grey-light);
+    color: grey;
+}
+
+.connect-img{
+    border-radius: 50rem;
+    width: 25%;
+    padding-bottom: 2rem;
+    margin-left: -35rem;
+}
+
+.connect{
+    text-align: center;
+    height: 32vh;
+    display: flex;
+    padding: 2rem;
+}
+
+.connect-main-text{
+    color: var(--main-grey);
+    font-size: 2rem;
+}
+
+.connect-point{
+    display:flex;
+    padding: .6rem 0rem;
+    justify-content: center;
+}
+
+.connect-icon{
+    font-size: 2rem;
+    color: var(--main-blue);
+    margin-right: 1rem;
+}
+
+.connect-point-text{
+    max-width: 30rem;
+    color: var(--main-grey-light);
+}
+
+.connect-text{
+    margin-left: -45rem;
+    padding-top: 2rem;
+}
+
+.colorme1{
+    background-color: var(--main-blue);
+}
+
+.footer{
+    height: 15vh;
+    background: var(--main-grey-light);   
+    text-align: center; 
+}
+
+.name1{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-text{
+    color: white;
+}
+
+@media screen and (max-width:786px){
+    .connect{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
+    .explore-section{
+        height: 40vh;
+    }
+}
